@@ -1,3 +1,6 @@
+input {
+  outline: none;
+}
 .section-form {
   background-color: $color-primary;
   padding-top: 30px;
@@ -6,8 +9,8 @@
   &__container {
     margin: auto;
     max-width: 1340px;
-    // padding-right: 20px;
-    // padding-left: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 
     .form-item {
       display: grid;
@@ -34,39 +37,41 @@
     }
   }
 
-  input {
+  .btn-input,
+  .btn-subscribe {
     border: none;
     font-family: $font-main;
     font-size: 1.125rem;
     letter-spacing: 0.15em;
+    color: $color-light;
     height: 60px;
     width: 100%;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: #38405a; /* #ffffff */
-    border: 2px solid #38405a;
-    border-bottom-color: #72788a;
-    transition: border 0.5s, background-color 0.5s, outline 0.5s;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+    transition: border 0.5s, background-color 0.5s;
   }
   .btn-input::placeholder {
     color: #637588;
   }
 
   .btn-subscribe {
-    letter-spacing: 0.15em;
-    color: $color-light;
-    background-color: #424b63;
+    background-color: rgba(255, 255, 255, 0.1);
     width: 100%;
   }
 }
-input:hover {
-  color: $color-gray;
+.btn-input:hover,
+.btn-input:focus {
   background-color: rgba(255, 255, 255, 0.15);
-  border-bottom-color: $color-gray-light;
+  border-color: rgba(255, 255, 255, 0.15);
+  border-bottom-color: $color-light;
 }
-.btn-subscribe:hover {
+.btn-subscribe:hover,
+.btn-subscribe:focus {
   background-color: $color-accent;
-  border-color: $color-gray-light;
+  border-color: $color-light;
 }
 .btn-input:hover::placeholder {
   color: #8c9bab;

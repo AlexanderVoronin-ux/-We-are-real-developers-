@@ -54,12 +54,12 @@
   z-index: 2;
   margin: 0;
   letter-spacing: 0.1em;
-}
-@include md-min {
-  font-size: 1.25rem;
-}
-@include md {
-  font-size: 1.125rem;
+  @include md-min {
+    font-size: 1.25rem;
+  }
+  @include md {
+    font-size: 1.125rem;
+  }
 }
 
 .skill-item__link {

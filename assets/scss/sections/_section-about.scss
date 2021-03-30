@@ -1,5 +1,5 @@
 .about {
-  background-color: #e5e5e5;
+  background-color: $color-gray-light;
   @include lg-min {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -9,12 +9,12 @@
     padding-bottom: 80px;
   }
   @include md-sm {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   @include sm {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   &__container {
@@ -67,7 +67,7 @@
       &__text {
         font-family: $font-main;
         font-size: 1rem;
-        color: $color-gray;
+        color: #637588;
         letter-spacing: 0.05em;
         line-height: 1.15em;
         margin-top: -5px;
