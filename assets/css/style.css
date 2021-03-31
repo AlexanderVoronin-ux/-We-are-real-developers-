@@ -866,8 +866,6 @@ input {
   display: grid;
   gap: 20px;
   max-width: 1340px;
-  padding-right: 20px;
-  padding-left: 20px;
   margin: auto;
   height: 100%;
   -webkit-box-pack: center;
@@ -876,8 +874,6 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 20px;
-  padding-left: 20px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "p1 p2 p3";
 }
